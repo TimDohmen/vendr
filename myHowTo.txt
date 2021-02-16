@@ -1,0 +1,25 @@
+
+//NOTE MODEL
+new class -> export default class ClassName so appstate/store can import
+
+//NOTE APPSTATE/STORE
+import class to store/appstate and create property from new class
+
+//NOTE SERVICE
+import proxy from store/appstate to pull properties from appstate into functions
+service for new class, insert business logic here, actual functions
+service -> singleton: export const serviceName = new serviceName()
+
+//NOTE CONTROLLER
+import proxy from store/appstate
+import service
+use proxy listeners to monitor appstate/store property
+can draw template html here
+prive functions can be passed into constructor for controller to use from listeners 
+functions inside controller class that are not build with constructor are to pass from html events to service
+controller -> export default to be used in view level
+
+//NOTE MAIN JAVASCRIPT FILE
+import controllers
+class App { create new variables to instantiate the controller classes }
+draw app to window -> window["app"] = new App();

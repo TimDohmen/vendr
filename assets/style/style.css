@@ -1,0 +1,270 @@
+
+* {
+/*   outline: 1px solid red; */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+
+body {
+    background: url('../img/bg-vendr.png') no-repeat center;
+    background-size: cover;
+    overflow:hidden;  
+/*   font-family: 'Mansalva', cursive; */
+/*   font-family: 'Stalinist One', cursive; */
+}
+
+.vending-machine {
+  min-width: 360px;
+  max-width: 400px;
+  min-height: 640px;
+  max-height: 711px;
+  margin: 0px auto;
+  box-shadow: 10px -10px 10px 0px #001445;
+}
+
+
+nav,footer,main {
+    box-shadow: inset 0px 0px 100px 0px #eee;
+}
+
+#logo-img {
+    height: 12vh;
+}
+#logo-text {
+    font-size: 2.5em;
+}
+
+button {
+    box-shadow: 0px 0px 3px 0px #000;
+}
+
+.sale-item {
+    box-shadow: inset 0px 0px 15px 0px #fff;
+}
+
+.pepchi {
+    background: url('../img/pepchi.png') no-repeat center;
+    /* background-image: url('../img/pepchi.png');
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-size: cover;
+}
+
+.pepchichi {
+    background: url('../img/pepchichi.png') no-repeat center;
+    background-size: cover;
+}
+
+.mtnstew {
+    background: url('../img/mtnstew.png') no-repeat center;
+    background-size: cover;
+}
+
+.sierracyst {
+    background: url('../img/sierracyst.png') no-repeat center;
+    background-size: cover;
+}
+
+.mtnglue {
+    background: url('../img/mtnglue.png') no-repeat center;
+    background-size: cover;
+}
+
+.mrprepper {
+    background: url('../img/mrprepper.png') no-repeat center;
+    background-size: cover;
+}
+
+.brawndo {
+    background: url('../img/brawndo.png') no-repeat center;
+    background-size: cover;
+}
+
+.glockstar {
+    background: url('../img/glockstar.png') no-repeat center;
+    background-size: cover;
+}
+
+.outofservice {
+    background: url('../img/outofservice.png') no-repeat center;
+    background-size: cover;
+}
+
+.truck {
+    background: url('../img/truck.png') no-repeat center;
+    background-size: cover;
+}
+
+.pepchi-left {
+    background: url('../img/pepchi-left.png') no-repeat center;
+    background-size: cover;
+}
+
+.pepchichi-left {
+    background: url('../img/pepchichi-left.png') no-repeat center;
+    background-size: cover;
+}
+
+.mtnstew-left {
+    background: url('../img/mtnstew-left.png') no-repeat center;
+    background-size: cover;
+}
+
+.sierracyst-left {
+    background: url('../img/sierracyst-left.png') no-repeat center;
+    background-size: cover;
+}
+
+.mtnglue-left {
+    background: url('../img/mtnglue-left.png') no-repeat center;
+    background-size: cover;
+}
+
+.mrprepper-left {
+    background: url('../img/mrprepper-left.png') no-repeat center;
+    background-size: cover;
+}
+
+.brawndo-left {
+    background: url('../img/brawndo-left.png') no-repeat center;
+    background-size: cover;
+}
+
+.glockstar-left {
+    background: url('../img/glockstar-left.png') no-repeat center;
+    background-size: cover;
+}
+
+.truck-left {
+    background: url('../img/truck-left.png') no-repeat center;
+    background-size: cover;
+}
+
+.pay {
+  /*#967e5a*/
+  background-color: #967e5a !important;
+  background: url('../img/pay.png') no-repeat center;
+  background-size: contain;
+  box-shadow: inset 0px 0px 15px 0px #000;
+}
+
+.return-change {
+  /*#918473*/
+  background-color: #918473 !important;
+  background: url('../img/return-change1.png') no-repeat center;
+  background-size: contain;
+  box-shadow: inset 0px 0px 15px 0px #000;
+}
+
+.item-pickup {
+    background: url('../img/item-pickup.png') no-repeat center;
+    background-size: contain;
+    height: 60%;
+}
+
+.item-pickup-anim {
+    height: 60%;
+    width: 90%;
+    margin-top: 5px;
+}
+
+.flicker {
+	animation: flicker-3 7s linear 1s infinite both;
+}
+@keyframes flicker-3 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  32.98% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 0;
+  }
+  34.02% {
+    opacity: 1;
+  }
+  34.98% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  35.9% {
+    opacity: 0;
+  }
+  35.92% {
+    opacity: 1;
+  }
+  38.98% {
+    opacity: 1;
+  }
+  39% {
+    opacity: 0;
+  }
+  39.8% {
+    opacity: 0;
+  }
+  39.82% {
+    opacity: 1;
+  }
+  83.98% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 1;
+  }
+  84.9% {
+    opacity: 1;
+  }
+  84.92% {
+    opacity: 1;
+  }
+}
+
+
+.focus-in-expand-fwd {
+	animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes focus-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-800px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+
+  .text-blur-out {
+	animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@keyframes text-blur-out {
+    0% {
+      filter: blur(0.01);
+    }
+    100% {
+      filter: blur(12px) opacity(0%);
+    }
+  }
+
+
+
+@media (min-width: 768px) { 
+  .vending-machine {
+    margin-top: 25vh;
+  }
+}
+  
